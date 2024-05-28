@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.top-bar {
+    display: flex;
+    gap: 10px;
+}
+
+.top-bar a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+} */
+
+/* nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+} */
+
+.hero {
+    background-image: url('imagenes/palmeras1.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 3rem;
+}
+
+.product {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    max-height: 700px;
+    object-fit: contain;
+}
+.product h3 {
+    margin-top: 0.5rem;
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content input[type="email"] {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-bottom ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    color: #555;
+}
+
+/* .menu-toggle {
+    display: none;
+    background: #333;
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+} */
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 1rem 0;
+    }
+    
+    .hero .button {
+        padding: 0.5rem 1rem;
+    }
+    
+    .footer-content input[type="email"] {
+        width: 90%;
+    }
+    
+    /* /* nav ul {
+        flex-direction: column;
+        display: none;
+    }
+    /* nav ul.showing {
+        display: flex;
+    } */
+    
+    /* .menu-toggle {
+        display: block;
+    }
+     */
+    /* nav ul li {
+        margin: 0.5rem 0;
+    } */ 
+    
+    .products {
+        grid-template-columns: 1fr;
+    }
+}
